@@ -15,6 +15,22 @@ const routes = [
         path: '/balita/edit/:id',
         name: 'balita.edit',
         component: () => import("/src/views/balita/Index.vue")
+    },
+
+    {
+        path: '/saran',
+        name: 'saran.index',
+        component: () => import("/src/views/saran/Index.vue")
+    },
+    {
+        path: '/saran',
+        name: 'saran.create',
+        component: () => import("/src/views/saran/Index.vue")
+    },
+    {
+        path: '/saran/edit/:id',
+        name: 'saran.edit',
+        component: () => import("/src/views/saran/Index.vue")
     }
 ];
 
