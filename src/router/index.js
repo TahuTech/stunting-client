@@ -2,17 +2,17 @@ import { createRouter, createWebHistory } from 'vue-router'
 
 const routes = [
     {
-        path: '/',
+        path: '/balita',
         name: 'balita.index',
         component: () => import("/src/views/balita/Index.vue")
     },
     {
-        path: '/',
+        path: '/balita',
         name: 'balita.create',
         component: () => import("/src/views/balita/Index.vue")
     },
     {
-        path: '/edit/:id',
+        path: '/balita/edit/:id',
         name: 'balita.edit',
         component: () => import("/src/views/balita/Index.vue")
     }
