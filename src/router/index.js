@@ -4,17 +4,17 @@ const routes = [
     {
         path: '/',
         name: 'balita.index',
-        component: () => import("@/views/balita/Index.vue")
+        component: () => import("/src/views/balita/Index.vue")
     },
     {
         path: '/',
         name: 'balita.create',
-        component: () => import("@/views/balita/Create.vue")
+        component: () => import("/src/views/balita/Index.vue")
     },
     {
         path: '/edit/:id',
         name: 'balita.edit',
-        component: () => import("@/views/balita/Edit.vue")
+        component: () => import("/src/views/balita/Index.vue")
     }
 ];
 
