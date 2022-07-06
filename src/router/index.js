@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
 
 const routes = [
+    //balita routes
     {
         path: '/balita',
         name: 'balita.index',
@@ -17,6 +18,7 @@ const routes = [
         component: () => import("/src/views/balita/Index.vue")
     },
 
+    //saran routes
     {
         path: '/saran',
         name: 'saran.index',
