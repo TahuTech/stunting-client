@@ -1,6 +1,12 @@
 import { createRouter, createWebHistory } from 'vue-router'
 
 const routes = [
+    //home
+    // {
+    //     path: '/home',
+    //     name: 'saran.index',
+    //     component: () => import("/src/views/saran/Index.vue")
+    // },
     //balita routes
     {
         path: '/balita',
@@ -10,12 +16,12 @@ const routes = [
     {
         path: '/balita',
         name: 'balita.create',
-        component: () => import("/src/views/balita/Index.vue")
+        component: () => import("/src/views/balita/Create.vue")
     },
     {
         path: '/balita/edit/:id',
         name: 'balita.edit',
-        component: () => import("/src/views/balita/Index.vue")
+        component: () => import("/src/views/balita/Edit.vue")
     },
 
     //saran routes
@@ -27,12 +33,12 @@ const routes = [
     {
         path: '/saran',
         name: 'saran.create',
-        component: () => import("/src/views/saran/Index.vue")
+        component: () => import("/src/views/saran/Add.vue")
     },
     {
         path: '/saran/edit/:id',
         name: 'saran.edit',
-        component: () => import("/src/views/saran/Index.vue")
+        component: () => import("/src/views/saran/Edit.vue")
     }
 ];
 
