@@ -13,8 +13,8 @@
                             <div class="mb-3">
                                 <label for="" class="form-label">Nama Balita</label>
                                 <input type="text" class="form-control" v-model="balita.nama">
-                                <div class="text-danger">
-                                    Pesan Validasi
+                                <div v-if="validation.nama" class="text-danger">
+                                    {{ validation.nama[0] }}
                                 </div>
                             </div>
                             <button class="btn btn-outline-primary">Simpan</button>
