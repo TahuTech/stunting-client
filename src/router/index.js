@@ -14,7 +14,7 @@ const routes = [
         component: () => import("/src/views/balita/Index.vue")
     },
     {
-        path: '/balita',
+        path: '/balita/create',
         name: 'balita.create',
         component: () => import("/src/views/balita/Create.vue")
     },
@@ -31,7 +31,7 @@ const routes = [
         component: () => import("/src/views/saran/Index.vue")
     },
     {
-        path: '/saran',
+        path: '/saran/create',
         name: 'saran.create',
         component: () => import("/src/views/saran/Add.vue")
     },
