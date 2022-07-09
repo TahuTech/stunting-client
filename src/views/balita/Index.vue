@@ -19,14 +19,16 @@
                             </thead>
                             <tbody>
                                 <tr v-for="(balita, index) in balitas.data" :key="index">
-                                    <td>{{ balita.id }}</td>
+                                    <td>{{ balita.id }}
+                                    </td>
                                     <td>{{ balita.nama }}</td>
                                     <td>
                                         <div class="btn-group">
                                             <router-link :to="{ name: 'balita.edit', params: { id: balita.id } }"
                                                 class="btn btn-sm btn-outline-info">
                                                 Edit</router-link>
-                                            <button class="btn btn-sm btn-outline-danger">
+                                            <button class="btn btn-sm btn-outline-danger"
+                                                @click.prevent="destroy(balita.id, index)">
                                                 Delete
                                             </button>
                                         </div>
@@ -60,8 +62,20 @@ export default {
                 })
         });
 
+        function destroy(id, index) {
+            axios.delete(
+                `http://127.0.0.1:8000/api/balita/${id}`
+            )
+                .then(() => {
+                    balitas.value.data.splice(index, 1)
+                }).catch((err) => {
+                    console.log(err.response.data);
+                });
+        }
+
         return {
-            balitas
+            balitas,
+            destroy
         }
     }
 }
