@@ -2,11 +2,11 @@ import { createRouter, createWebHistory } from 'vue-router'
 
 const routes = [
     //home
-    // {
-    //     path: '/home',
-    //     name: 'saran.index',
-    //     component: () => import("/src/views/saran/Index.vue")
-    // },
+    {
+        path: '/',
+        name: 'home.index',
+        component: () => import("../views/home/Index.vue")
+    },
     //balita routes
     {
         path: '/balita',
