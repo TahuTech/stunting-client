@@ -33,7 +33,7 @@ const routes = [
     {
         path: '/saran/create',
         name: 'saran.create',
-        component: () => import("/src/views/saran/Add.vue")
+        component: () => import("/src/views/saran/Create.vue")
     },
     {
         path: '/saran/edit/:id',
