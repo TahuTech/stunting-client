@@ -11,35 +11,52 @@ const routes = [
     {
         path: '/balita',
         name: 'balita.index',
-        component: () => import("/src/views/balita/Index.vue")
+        component: () => import("../views/balita/Index.vue")
     },
     {
         path: '/balita/create',
         name: 'balita.create',
-        component: () => import("/src/views/balita/Create.vue")
+        component: () => import("../views/balita/Create.vue")
     },
     {
         path: '/balita/edit/:id',
         name: 'balita.edit',
-        component: () => import("/src/views/balita/Edit.vue")
+        component: () => import("../views/balita/Edit.vue")
     },
 
     //saran routes
     {
         path: '/saran',
         name: 'saran.index',
-        component: () => import("/src/views/saran/Index.vue")
+        component: () => import("../views/saran/Index.vue")
     },
     {
         path: '/saran/create',
         name: 'saran.create',
-        component: () => import("/src/views/saran/Create.vue")
+        component: () => import("../views/saran/Create.vue")
     },
     {
         path: '/saran/edit/:id',
         name: 'saran.edit',
-        component: () => import("/src/views/saran/Edit.vue")
-    }
+        component: () => import("../views/saran/Edit.vue")
+    },
+
+    //KNN routes
+    {
+        path: '/knn',
+        name: 'knn.index',
+        component: () => import("../views/knn/Index.vue")
+    },
+    {
+        path: '/knn/create',
+        name: 'knn.create',
+        component: () => import("../views/knn/Create.vue")
+    },
+    {
+        path: '/knn/edit/:id',
+        name: 'knn.edit',
+        component: () => import("../views/knn/Edit.vue")
+    },
 ];
 
 const router = createRouter({
