@@ -17,13 +17,14 @@
                             </thead>
                             <tbody>
                                 <tr v-for="(saran, index) in sarans.data" :key="index">
-                                    <td>{{ saran.nama }}</td>
+                                    <td>{{ saran.isi }}</td>
                                     <td>
                                         <div class="btn-group">
-                                            <router-link :to="{ name: 'saran.edit', params: { id: balita.id } }"
+                                            <router-link :to="{ name: 'saran.edit', params: { id: saran.id } }"
                                                 class="btn btn-sm btn-outline-info">
                                                 Edit</router-link>
-                                            <button class="btn btn-sm btn-outline-danger">
+                                            <button class="btn btn-sm btn-outline-danger"
+                                                @click.prevent="destroy(saran.id, index)">
                                                 Delete
                                             </button>
                                         </div>
@@ -51,14 +52,26 @@ export default {
             //ambil data dari api
             axios.get('http://127.0.0.1:8000/api/saran')
                 .then((result) => {
-                    balitas.value = result.data
+                    sarans.value = result.data
                 }).catch((err) => {
                     console.log(err.response)
                 })
         });
 
+        function destroy(id, index) {
+            axios.delete(
+                `http://127.0.0.1:8000/api/saran/${id}`
+            )
+                .then(() => {
+                    sarans.value.data.splice(index, 1)
+                }).catch((err) => {
+                    console.log(err.response.data);
+                });
+        }
+
         return {
-            sarans
+            sarans,
+            destroy
         }
     }
 }
