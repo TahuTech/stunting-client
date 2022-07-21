@@ -1,7 +1,7 @@
 <template>
     <div class="container my-5">
         <div class="row justify-content-center">
-            <div class="col-8">
+            <div class="col-flex">
                 <router-link :to="{ name: 'knn.create' }" class="btn btn-primary btn-sm rounded shadow mb-3">
                     Tambah Data Balita
                 </router-link>
@@ -21,6 +21,7 @@
                                     <th>Gizi</th>
                                     <th>Berat</th>
                                     <th>Tinggi</th>
+                                    <th></th>
                                     <th>Action</th>
                                 </tr>
                             </thead>
@@ -37,6 +38,11 @@
                                     <td>{{ knn.berat }}</td>
                                     <td>{{ knn.tinggi }}</td>
                                     <td>
+                                        <router-link :to="{ name: 'knn.detail', params: { id: knn.id } }"
+                                            class="btn btn-sm btn-outline-warning">
+                                            Detail</router-link>
+                                    </td>
+                                    <td>
                                         <div class="btn-group">
                                             <router-link :to="{ name: 'knn.edit', params: { id: knn.id } }"
                                                 class="btn btn-sm btn-outline-info">
@@ -47,6 +53,7 @@
                                             </button>
                                         </div>
                                     </td>
+
                                 </tr>
                             </tbody>
                         </table>

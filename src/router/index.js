@@ -60,7 +60,7 @@ const routes = [
     {
         path: '/knn/detail/:id',
         name: 'knn.detail',
-        component: () => import("../views/knn/Details.vue")
+        component: () => import("../views/knn/Detail.vue")
     },
 ];
 
