@@ -19,7 +19,7 @@
                             </thead>
                             <tbody>
                                 <tr v-for="(balita, index) in balitas.data" :key="index">
-                                    <td>{{ balita.id }}
+                                    <td>
                                     </td>
                                     <td>{{ balita.nama }}</td>
                                     <td>
@@ -42,6 +42,21 @@
         </div>
     </div>
 </template>
+
+<style>
+table {
+    width: 50%;
+    counter-reset: row-num -1;
+}
+
+table tr {
+    counter-increment: row-num;
+}
+
+table tr td:first-child::before {
+    content: counter(row-num) ". ";
+}
+</style>
 
 <script>
 import axios from 'axios'
