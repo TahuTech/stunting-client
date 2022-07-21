@@ -18,7 +18,7 @@
             <a class="nav-link" href="/saran">Saran</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/saran">Dataset</a>
+            <a class="nav-link" href="/dataset">Dataset</a>
           </li>
           <!-- <li class="nav-item">
             <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>

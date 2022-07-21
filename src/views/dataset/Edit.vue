@@ -2,12 +2,12 @@
     <div class="container my-5">
         <div class="row justify-content-center">
             <div class="col-8">
-                <router-link :to="{ name: 'balita.index' }" class="btn btn-warning btn-sm rounded shadow mb-3">
+                <router-link :to="{ name: 'dataset.index' }" class="btn btn-warning btn-sm rounded shadow mb-3">
                     Kembali
                 </router-link>
 
                 <div class="card rounded shadow">
-                    <div class="card-header">Edit Data Balita</div>
+                    <div class="card-header">Edit Dataset KNN</div>
                     <div class="card-body">
                         <form @submit.prevent="update()">
                             <div class="mb-3">

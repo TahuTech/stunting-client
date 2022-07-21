@@ -24,19 +24,18 @@
                 </div>
 
                 <label for="" class="form-label">Berat Balita</label>
-                <input type="number" class="form-control" min="0" max="60" v-model="knn.bb">
+                <input type="number" class="form-control" min="0" v-model="knn.bb">
                 <div v-if="validation.bb" class="text-danger">
                   {{ validation.bb[0] }}
                 </div>
 
                 <label for="" class="form-label">Tinggi Balita</label>
-                <input type="number" class="form-control" min="0" max="60" v-model="knn.tb">
+                <input type="number" class="form-control" min="0" v-model="knn.tb">
                 <div v-if="validation.tb" class="text-danger">
                   {{ validation.tb[0] }}
                 </div>
 
                 <label for="" class="form-label">Bulan Pengukuran</label>
-
                 <br>
                 <select name="bulan" id="bulan" form="knn" v-model="knn.bulan">
                   <option value="1">Januari</option>
