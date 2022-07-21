@@ -24,7 +24,7 @@
                 <input type="number" class="form-control" min="0" max="60">
 
                 <label for="" class="form-label">Bulan Pengukuran</label>
-                <br></br>
+                <br>
                 <select name="cars" id="cars" form="carform">
                   <option value="1">Januari</option>
                   <option value="2">Februari</option>

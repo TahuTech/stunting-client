@@ -57,6 +57,11 @@ const routes = [
         name: 'knn.edit',
         component: () => import("../views/knn/Edit.vue")
     },
+    {
+        path: '/knn/detail/:id',
+        name: 'knn.detail',
+        component: () => import("../views/knn/Details.vue")
+    },
 ];
 
 const router = createRouter({
