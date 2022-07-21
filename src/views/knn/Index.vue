@@ -27,8 +27,7 @@
                             </thead>
                             <tbody>
                                 <tr v-for="(knn, index) in knns.data" :key="index">
-                                    <td>{{ knn.id }}
-                                    </td>
+                                    <td></td>
                                     <td>{{ knn.id_balita }}</td>
                                     <td>{{ knn.u }} bulan</td>
                                     <td>{{ knn.bb }} kg</td>
@@ -63,6 +62,21 @@
         </div>
     </div>
 </template>
+
+<style>
+table {
+    width: 50%;
+    counter-reset: row-num -1;
+}
+
+table tr {
+    counter-increment: row-num;
+}
+
+table tr td:first-child::before {
+    content: counter(row-num) ". ";
+}
+</style>
 
 <script>
 import axios from 'axios'

@@ -11,12 +11,14 @@
                         <table class="table">
                             <thead>
                                 <tr>
+                                    <th>No</th>
                                     <th>Isi Saran</th>
                                     <th>Action</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr v-for="(saran, index) in sarans.data" :key="index">
+                                    <td></td>
                                     <td>{{ saran.isi }}</td>
                                     <td>
                                         <div class="btn-group">
@@ -38,6 +40,21 @@
         </div>
     </div>
 </template>
+
+<style>
+table {
+    width: 50%;
+    counter-reset: row-num -1;
+}
+
+table tr {
+    counter-increment: row-num;
+}
+
+table tr td:first-child::before {
+    content: counter(row-num) ". ";
+}
+</style>
 
 <script>
 import axios from 'axios'
