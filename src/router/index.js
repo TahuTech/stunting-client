@@ -62,6 +62,23 @@ const routes = [
         name: 'knn.detail',
         component: () => import("../views/knn/Detail.vue")
     },
+
+    //dataset routes
+    {
+        path: '/dataset',
+        name: 'dataset.index',
+        component: () => import("../views/dataset/Index.vue")
+    },
+    {
+        path: '/dataset/create',
+        name: 'dataset.create',
+        component: () => import("../views/dataset/Create.vue")
+    },
+    {
+        path: '/dataset/edit/:id',
+        name: 'dataset.edit',
+        component: () => import("../views/dataset/Edit.vue")
+    },
 ];
 
 const router = createRouter({

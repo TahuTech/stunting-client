@@ -9,7 +9,7 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="/balita">Balita</a>
+            <a class="nav-link" aria-current="page" href="/balita">Balita</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="/knn">KNN</a>
@@ -18,8 +18,11 @@
             <a class="nav-link" href="/saran">Saran</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+            <a class="nav-link" href="/saran">Dataset</a>
           </li>
+          <!-- <li class="nav-item">
+            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+          </li> -->
         </ul>
       </div>
     </div>
