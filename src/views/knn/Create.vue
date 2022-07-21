@@ -12,20 +12,33 @@
             <form @submit.prevent="store()">
               <div class="mb-3">
                 <label for="" class="form-label">Id Balita</label>
-                <input type="number" class="form-control">
+                <input type="number" class="form-control" v-model="knn.id_balita">
+                <div v-if="validation.id_balita" class="text-danger">
+                  {{ validation.id_balita[0] }}
+                </div>
 
                 <label for="" class="form-label">Umur Balita</label>
-                <input type="number" class="form-control" min="0" max="60">
+                <input type="number" class="form-control" min="0" max="60" v-model="knn.u">
+                <div v-if="validation.u" class="text-danger">
+                  {{ validation.u[0] }}
+                </div>
 
                 <label for="" class="form-label">Berat Balita</label>
-                <input type="number" class="form-control" min="0" max="60">
+                <input type="number" class="form-control" min="0" max="60" v-model="knn.bb">
+                <div v-if="validation.bb" class="text-danger">
+                  {{ validation.bb[0] }}
+                </div>
 
                 <label for="" class="form-label">Tinggi Balita</label>
-                <input type="number" class="form-control" min="0" max="60">
+                <input type="number" class="form-control" min="0" max="60" v-model="knn.tb">
+                <div v-if="validation.tb" class="text-danger">
+                  {{ validation.tb[0] }}
+                </div>
 
                 <label for="" class="form-label">Bulan Pengukuran</label>
+
                 <br>
-                <select name="cars" id="cars" form="carform">
+                <select name="bulan" id="bulan" form="knn" v-model="knn.bulan">
                   <option value="1">Januari</option>
                   <option value="2">Februari</option>
                   <option value="3">Maret</option>
@@ -39,6 +52,9 @@
                   <option value="11">November</option>
                   <option value="12">Desember</option>
                 </select>
+                <div v-if="validation.bulan" class="text-danger">
+                  {{ validation.bulan[0] }}
+                </div>
 
               </div>
               <button class="btn btn-outline-primary">Simpan</button>
