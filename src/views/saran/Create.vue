@@ -12,7 +12,8 @@
                         <form @submit.prevent="store()">
                             <div class="mb-3">
                                 <label for="" class="class form-label">Isi Saran</label>
-                                <input type="text" class="class form-control" v-model="saran.isi">
+                                <input type="text" class="class form-control" placeholder="Saran Untuk Website ini.."
+                                    style="height:150px" v-model="saran.isi">
                                 <div v-if="validation.isi" class="text-danger">
                                     {{ validation.isi[0] }}</div>
                             </div>
