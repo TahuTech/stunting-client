@@ -30,21 +30,21 @@
                                     <td>{{ dataset.dbb }} kg</td>
                                     <td>{{ dataset.dtb }} cm</td>
                                     <td>
-                                        <div v-if="dataset.dgizi == 1">Lebih</div>
-                                        <div v-if="dataset.dgizi == 2">Normal </div>
-                                        <div v-if="dataset.dgizi == 3">Kurang</div>
+                                        <div v-if="dataset.dgizi == 1" style="color:red">Lebih</div>
+                                        <div v-if="dataset.dgizi == 2" style="color:green">Normal </div>
+                                        <div v-if="dataset.dgizi == 3" style="color:yellow"> Kurang</div>
                                         <div v-if="dataset.dgizi == 4">Buruk</div>
                                     </td>
                                     <td>
-                                        <div v-if="dataset.dberat == 1">Gemuk</div>
-                                        <div v-if="dataset.dberat == 2">Normal </div>
-                                        <div v-if="dataset.dberat == 3">Kurus</div>
+                                        <div v-if="dataset.dberat == 1" style="color:red">Gemuk</div>
+                                        <div v-if="dataset.dberat == 2" style="color:green">Normal </div>
+                                        <div v-if="dataset.dberat == 3" style="coloyellow">Kurus</div>
                                         <div v-if="dataset.dberat == 4">S. Kurus</div>
                                     </td>
                                     <td>
-                                        <div v-if="dataset.dtinggi == 1">Tinggi</div>
-                                        <div v-if="dataset.dtinggi == 2">Normal </div>
-                                        <div v-if="dataset.dtinggi == 3">Pendek</div>
+                                        <div v-if="dataset.dtinggi == 1" style="color:red">Tinggi</div>
+                                        <div v-if="dataset.dtinggi == 2" style="color:green">Normal </div>
+                                        <div v-if="dataset.dtinggi == 3" style="color:yellow"> Pendek</div>
                                         <div v-if="dataset.dtinggi == 4">S. Pendek</div>
                                     </td>
                                     <td>
