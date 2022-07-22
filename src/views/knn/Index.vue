@@ -33,9 +33,27 @@
                                     <td>{{ knn.bb }} kg</td>
                                     <td>{{ knn.tb }} cm</td>
                                     <td>{{ knn.bulan }}</td>
-                                    <td>{{ knn.gizi }}</td>
-                                    <td>{{ knn.berat }}</td>
-                                    <td>{{ knn.tinggi }}</td>
+                                    <td>
+                                        <div v-if="knn.gizi == 1">Lebih</div>
+                                        <div v-if="knn.gizi == 2">Normal </div>
+                                        <div v-if="knn.gizi == 3">Kurang</div>
+                                        <div v-if="knn.gizi == 4">Buruk</div>
+                                        <div v-if="knn.gizi == null">---------</div>
+                                    </td>
+                                    <td>
+                                        <div v-if="knn.berat == 1">Gemuk</div>
+                                        <div v-if="knn.berat == 2">Normal </div>
+                                        <div v-if="knn.berat == 3">Kurus</div>
+                                        <div v-if="knn.berat == 4">S. Kurus</div>
+                                        <div v-if="knn.gizi == null">---------</div>
+                                    </td>
+                                    <td>
+                                        <div v-if="knn.tinggi == 1">Tinggi</div>
+                                        <div v-if="knn.tinggi == 2">Normal </div>
+                                        <div v-if="knn.tinggi == 3">Pendek</div>
+                                        <div v-if="knn.tinggi == 4">S. Pendek</div>
+                                        <div v-if="knn.gizi == null">---------</div>
+                                    </td>
                                     <td>
                                         <router-link :to="{ name: 'knn.detail', params: { id: knn.id } }"
                                             class="btn btn-sm btn-outline-warning">
