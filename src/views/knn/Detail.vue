@@ -23,29 +23,23 @@
                                 <label for="" class="form-label">Tinggi Balita : {{ knn.tb }} Cm</label>
                                 <br>
 
-                                <div class="row mt-8 select-outline">
 
-                                    <label for="" class="form-label">Bulan Pengukuran</label>
-                                    <br>
-                                    <select name="bulan" id="bulan" form="knn" v-model="knn.bulan" disabled>
-                                        <option value="" disabled selected>Pilih Bulan</option>
-                                        <option value="1">Januari</option>
-                                        <option value="2">Februari</option>
-                                        <option value="3">Maret</option>
-                                        <option value="4">April</option>
-                                        <option value="5">Mei</option>
-                                        <option value="6">Juni</option>
-                                        <option value="7">Juli</option>
-                                        <option value="8">Agustus</option>
-                                        <option value="9">September</option>
-                                        <option value="10">Oktober</option>
-                                        <option value="11">November</option>
-                                        <option value="12">Desember</option>
-                                    </select>
-                                    <div v-if="validation.bulan" class="text-danger">
-                                        {{ validation.bulan[0] }}
-                                    </div>
-                                </div>
+
+                                <label for="" class="form-label">Bulan Pengukuran :</label>
+                                <label v-if="knn.bulan == 1">Januari</label>
+                                <label v-if="knn.bulan == 2"> Februari</label>
+                                <label v-if="knn.bulan == 3">Maret</label>
+                                <label v-if="knn.bulan == 4">April</label>
+                                <label v-if="knn.bulan == 5">Mei</label>
+                                <label v-if="knn.bulan == 6">Juni</label>
+                                <label v-if="knn.bulan == 7">Juli</label>
+                                <label v-if="knn.bulan == 8">Agustus</label>
+                                <label v-if="knn.bulan == 9">September</label>
+                                <label v-if="knn.bulan == 10">Oktober</label>
+                                <label v-if="knn.bulan == 11">November</label>
+                                <label v-if="knn.bulan == 12">Desember</label>
+                                <br>
+
 
                             </div>
 
