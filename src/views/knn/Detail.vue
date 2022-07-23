@@ -70,10 +70,11 @@
                             <!-- gizi Lebih -->
                             <div v-if="knn.gizi == 1">
                                 <p class=" card-text" style="text-align:center">
-                                    Sudah bagus lanjutkan pola hidup sehat dan seimbang buat si balita.
                                 </p>
                                 <ul>
-                                    <li></li>
+                                    <li>pola makan yang sehat dan berimbang</li>
+                                    <li>harap hindari makanan ringan kemasan untuk anak</li>
+                                    <li>hindari konsumsi garam serta gula berlebih</li>
                                 </ul>
                             </div>
                             <!-- gizi baik -->
@@ -85,7 +86,7 @@
                             <!-- gizi Kurang -->
                             <div v-if="knn.gizi == 3">
                                 <p class=" card-text" style="text-align:center">
-                                    Sudah bagus lanjutkan pola hidup sehat dan seimbang buat si balita.
+                                    Gizi kurang
                                 </p>
                                 <ul>
                                     <li></li>
@@ -94,10 +95,11 @@
                             <!-- gizi buruk -->
                             <div v-if="knn.gizi == 4">
                                 <p class=" card-text" style="text-align:center">
-                                    Sudah bagus lanjutkan pola hidup sehat dan seimbang buat si balita.
+                                    Perhatikan gizi serta konsumsi dengan gizi yang cukup pada anak.
+                                    pemberian asi ekslusif pada anak juga.
                                 </p>
                                 <ul>
-                                    <li></li>
+                                    <li> Komposisi gizi Makanan si ibu (jika pemberian asi)</li>
                                 </ul>
                             </div>
 
@@ -143,33 +145,34 @@
                                     Normal tetap pertahankan pola hidup sehat si balita,
                                     dan jangan lupa untuk bergerak aktif
                                 </p>
-                                <ul>
-                                    <li></li>
-                                </ul>
+
                             </div>
                             <!-- Kurus -->
                             <div v-if="knn.berat == 3">
                                 <p class=" card-text" style="text-align:center">
-                                    Beresiko Obesitas
+
                                 </p>
                                 <ul>
                                     <li></li>
                                 </ul>
                             </div>
                             <!-- sangat Kurus -->
-                            <div v-if="knn.berat == 4">
+                            <div v-if="knn.berat == 3">
                                 <p class=" card-text" style="text-align:center">
-                                    Beresiko Obesitas
+
                                 </p>
                                 <ul>
                                     <li></li>
                                 </ul>
+                                <router-link :to="{ name: 'knn.index' }"
+                                    class="btn btn-warning btn-sm rounded shadow mb-3">
+                                    Saran SUSU Penambah Berat Badan
+                                </router-link>
                             </div>
 
 
                         </div>
                         <div class="card-footer">
-
                         </div>
                     </div>
 
@@ -194,14 +197,8 @@
                             <!-- Tinggi -->
                             <div v-if="knn.tinggi == 1">
                                 <p class=" card-text" style="text-align:center">
-                                    Beresiko Obesitas pada anak. solusi
+                                    Perlu penyimbangan protein serta gizi lainnya
                                 </p>
-                                <ul>
-                                    <li>ajak bermain dengan bergerak aktif.</li>
-                                    <li>perhatikan pola makan.</li>
-                                    <li>batasi camilan kemasan.</li>
-                                    <li>konsumsi buah dan sayur.</li>
-                                </ul>
                             </div>
                             <!-- normal -->
                             <div v-if="knn.tinggi == 2">
@@ -213,20 +210,24 @@
                             <!-- Pendek -->
                             <div v-if="knn.tinggi == 3">
                                 <p class=" card-text" style="text-align:center">
-                                    Beresiko Obesitas
+                                    tinggi anak di bawah rata" masih ayo pantau anak lagi dengan cara
                                 </p>
                                 <ul>
-                                    <li></li>
+                                    <li>Memenuhi Protein, Zat besi, Vitamin A, Kalsium</li>
+                                    <li>Ajak Lebih Aktif/stimulus gerakan </li>
+                                    <li>Memberikan asi Ekslusif</li>
                                 </ul>
                             </div>
                             <!-- sangat pendek -->
                             <div v-if="knn.tinggi == 4">
                                 <p class=" card-text" style="text-align:center">
-                                    Beresiko Obesitas
                                 </p>
                                 <ul>
-                                    <li></li>
+                                    <li>Memenuhi Protein, Zat besi, Vitamin A</li>
+                                    <li>Memberikan asi Ekslusif</li>
+                                    <li>Perhatikan Kebersihan Lingkungan</li>
                                 </ul>
+                                <p style="text-align:center">*Pemeriksaan Lebih Lanjut diperlukan</p>
                             </div>
 
                         </div>

@@ -69,6 +69,13 @@ const routes = [
         component: () => import("../views/knn/Detail.vue")
     },
 
+    //penganganan routes
+    {
+        path: '/aksi/susu',
+        name: 'aksi.susu',
+        component: () => import("../views/knn/aksi/Susu.vue")
+    },
+
     //dataset routes
     {
         path: '/dataset',
