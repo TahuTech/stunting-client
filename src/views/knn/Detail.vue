@@ -157,7 +157,7 @@
                                 </ul>
                             </div>
                             <!-- sangat Kurus -->
-                            <div v-if="knn.berat == 3">
+                            <div v-if="knn.berat == 4">
                                 <p class=" card-text" style="text-align:center">
 
                                 </p>

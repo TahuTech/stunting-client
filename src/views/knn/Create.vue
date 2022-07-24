@@ -105,20 +105,6 @@ export default {
         });
     }
 
-    function aksi() {
-      axios.get(
-        'http://127.0.0.1:8000/api/aksi',
-
-      )
-        .then(() => {
-          router.push({
-            name: 'knn.index'
-          });
-        }).catch((err) => {
-          validation.value = err.response.data
-        });
-    }
-
     return {
       knn,
       validation,

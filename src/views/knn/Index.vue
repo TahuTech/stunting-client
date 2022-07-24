@@ -105,6 +105,18 @@ export default {
         //status reactif
         let knns = ref([]);
 
+        let aksis = ref([]);
+
+        onMounted(() => {
+            //ambil data dari api
+            axios.get('http://127.0.0.1:8000/api/aksi')
+                .then((result) => {
+                    aksis.value = result.data
+                }).catch((err) => {
+                    console.log(err.response)
+                })
+        });
+
         onMounted(() => {
             //ambil data dari api
             axios.get('http://127.0.0.1:8000/api/knn')
@@ -127,6 +139,7 @@ export default {
         }
 
         return {
+            aksis,
             knns,
             destroy
         }
