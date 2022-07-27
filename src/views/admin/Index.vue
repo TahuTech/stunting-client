@@ -1,7 +1,7 @@
 <template>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
-            <a class="navbar-brand" href="/">Klanting</a>
+            <a class="navbar-brand" href="/admin">Klanting Admin</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -28,6 +28,32 @@
         </div>
     </nav>
 
+    <div class="container my-5">
+        <div class="row justify-content-center">
+            <div class="col-8">
+
+                <div class="card shadow-2-strong" style="border-radius: 1rem;">
+                    <h4 style="text-align: center">Klanting</h4>
+
+                    <div class="card rounded shadow">
+                        <div class="card-body my-4">
+                            <p style="text-align: center"> Ialah website dimana untuk membantu mengklafikasikan balita
+                                tergolong dalam gizi
+                                (BB/U) yaitu gizi lebih, gizi baik, gizi kurang, atau gizi buruk; Tinggi (TB/U) yaitu
+                                sangat
+                                pendek, pendek, normal, tinggi; serta berat (BB/TB) yaitu sangat kurus, kurus, normal,
+                                dan
+                                gemuk. </p>
+                        </div>
+
+                        <p style="text-align:center">Nur Ali Sholikhin 18053036</p>
+                        <p style="text-align:center">UWP 2022
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
 </template>
