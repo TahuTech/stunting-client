@@ -13,6 +13,54 @@ const routes = [
         name: 'home.index',
         component: () => import("../views/home/Index.vue")
     },
+    //about
+    {
+        path: '/about',
+        name: 'about.index',
+        component: () => import("../views/home/About.vue")
+    },
+
+
+    //admin
+    {
+        path: '/admin',
+        name: 'admin.index',
+        component: () => import("../views/admin/Index.vue")
+    },
+
+    //user
+    {
+        path: '/user',
+        name: 'user.index',
+        component: () => import("../views/user/Index.vue")
+    },
+    //user balita
+    {
+        path: '/user/balita',
+        name: 'user.balita',
+        component: () => import("../views/user/Balita.vue")
+    },
+    //user knn
+    {
+        path: '/user/knn',
+        name: 'user.knn',
+        component: () => import("../views/user/Knn.vue")
+    },
+    //user saran
+    {
+        path: '/user/saran',
+        name: 'user.saran',
+        component: () => import("../views/user/Saran.vue")
+    },
+    //user dataset
+    {
+        path: '/user/dataset',
+        name: 'user.dataset',
+        component: () => import("../views/user/Dataset.vue")
+    },
+
+
+
     //balita routes
     {
         path: '/balita',

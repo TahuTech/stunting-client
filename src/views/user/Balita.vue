@@ -1,7 +1,7 @@
 <template>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
-            <a class="navbar-brand" href="/">Klanting</a>
+            <a class="navbar-brand" href="/user">Klanting user</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -9,16 +9,16 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="/balita">Balita</a>
+                        <a class="nav-link active" aria-current="page" href="/user/balita">Balita</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/knn">KNN</a>
+                        <a class="nav-link" href="/user/knn">KNN</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/saran">Saran</a>
+                        <a class="nav-link" href="/user/saran">Saran</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/dataset">Dataset</a>
+                        <a class="nav-link" href="/user/dataset">Dataset</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="/about">About</a>
@@ -31,9 +31,6 @@
     <div class="container my-5">
         <div class="row justify-content-center">
             <div class="col-8">
-                <router-link :to="{ name: 'balita.create' }" class="btn btn-primary btn-sm rounded shadow mb-3">
-                    Tambah
-                </router-link>
 
                 <div class="card rounded shadow">
                     <div class="card-header">List Balita</div>
@@ -43,7 +40,6 @@
                                 <tr>
                                     <th>No</th>
                                     <th>Nama Balita</th>
-                                    <th>Action</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -51,17 +47,6 @@
                                     <td>
                                     </td>
                                     <td>{{ balita.nama }}</td>
-                                    <td>
-                                        <div class="btn-group">
-                                            <router-link :to="{ name: 'balita.edit', params: { id: balita.id } }"
-                                                class="btn btn-sm btn-outline-info">
-                                                Edit</router-link>
-                                            <button class="btn btn-sm btn-outline-danger"
-                                                @click.prevent="destroy(balita.id, index)">
-                                                Delete
-                                            </button>
-                                        </div>
-                                    </td>
                                 </tr>
                             </tbody>
                         </table>
