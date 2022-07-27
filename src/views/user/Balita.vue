@@ -12,16 +12,13 @@
                         <a class="nav-link active" aria-current="page" href="/user/balita">Balita</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/user/knn">KNN</a>
+                        <a class="nav-link" href="/user/knn">Status Balita</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="/user/saran">Saran</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/user/dataset">Dataset</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/about">About</a>
+                        <a class="nav-link" href="/user/about">About</a>
                     </li>
                 </ul>
             </div>
@@ -30,7 +27,7 @@
 
     <div class="container my-5">
         <div class="row justify-content-center">
-            <div class="col-8">
+            <div class="col-5">
 
                 <div class="card rounded shadow">
                     <div class="card-header">List Balita</div>

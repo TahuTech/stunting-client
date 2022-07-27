@@ -20,7 +20,7 @@
                                 placeholder="Password" />
                         </div>
 
-                        <router-link :to="{ name: 'dataset.index' }" class="btn btn-primary btn-lg btn-block">
+                        <router-link :to="{ name: 'user.index' }" class="btn btn-primary btn-lg btn-block">
                             <a>Masuk</a>
                         </router-link>
 

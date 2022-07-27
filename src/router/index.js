@@ -52,11 +52,11 @@ const routes = [
         name: 'user.saran',
         component: () => import("../views/user/Saran.vue")
     },
-    //user dataset
+    //user about
     {
-        path: '/user/dataset',
-        name: 'user.dataset',
-        component: () => import("../views/user/Dataset.vue")
+        path: '/user/about',
+        name: 'user.about',
+        component: () => import("../views/user/About.vue")
     },
 
 
