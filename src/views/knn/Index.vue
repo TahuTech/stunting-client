@@ -28,7 +28,7 @@
                             <tbody>
                                 <tr v-for="(knn, index) in knns.data" :key="index">
                                     <td></td>
-                                    <td>{{ knn.id_balita }}</td>
+                                    <td>{{ knn.nama }}</td>
                                     <td>{{ knn.u }} bulan</td>
                                     <td>{{ knn.bb }} kg</td>
                                     <td>{{ knn.tb }} cm</td>
