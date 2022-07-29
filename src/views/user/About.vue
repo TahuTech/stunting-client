@@ -18,7 +18,7 @@
                         <a class="nav-link" href="/user/saran">Saran</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/user/about">About</a>
+                        <a class="nav-link active" href="/user/about">About</a>
                     </li>
                 </ul>
             </div>
@@ -40,9 +40,10 @@
                                 sangat
                                 pendek, pendek, normal, tinggi; serta berat (BB/TB) yaitu sangat kurus, kurus, normal,
                                 dan
-                                gemuk. </p>
+                                gemuk. </p><br>
+                            <p style="text-align: center">
+                                website ini diajukan sebagai pemenuhan tugas akhir.</p>
                         </div>
-                        <br>
                         <p style="text-align:center">Nur Ali Sholikhin 18053036</p>
                         <p style="text-align:center">UWP 2022
                         </p>

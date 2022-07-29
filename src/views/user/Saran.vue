@@ -9,13 +9,13 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="/user/balita">Balita</a>
+                        <a class="nav-link " aria-current="page" href="/user/balita">Balita</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="/user/knn">Status Balita</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/user/saran">Saran</a>
+                        <a class="nav-link active" href="/user/saran">Saran</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="/user/about">About</a>

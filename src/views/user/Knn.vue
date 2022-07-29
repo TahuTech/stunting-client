@@ -9,10 +9,10 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="/user/balita">Balita</a>
+                        <a class="nav-link " aria-current="page" href="/user/balita">Balita</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/user/knn">Status Balita</a>
+                        <a class="nav-link active" href="/user/knn">Status Balita</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="/user/saran">Saran</a>
@@ -57,23 +57,23 @@
                                     <td>
                                         <div v-if="knn.gizi == 1" style="color:green">Lebih</div>
                                         <div v-if="knn.gizi == 2" style="color:#39FF14">Normal </div>
-                                        <div v-if="knn.gizi == 3" style="color:yellow">Kurang</div>
+                                        <div v-if="knn.gizi == 3" style="color:orange">Kurang</div>
                                         <div v-if="knn.gizi == 4" style="color:red">Buruk</div>
                                         <div v-if="knn.gizi == null">---------</div>
                                     </td>
                                     <td>
                                         <div v-if="knn.berat == 1" style="color:green">Gemuk</div>
                                         <div v-if="knn.berat == 2" style="color:#39FF14">Normal </div>
-                                        <div v-if="knn.berat == 3" style="color:yellow">Kurus</div>
+                                        <div v-if="knn.berat == 3" style="color:orange">Kurus</div>
                                         <div v-if="knn.berat == 4" style="color:red">S. Kurus</div>
-                                        <div v-if="knn.gizi == null">---------</div>
+                                        <div v-if="knn.berat == null">---------</div>
                                     </td>
                                     <td>
                                         <div v-if="knn.tinggi == 1" style="color:red">Tinggi</div>
                                         <div v-if="knn.tinggi == 2" style="color:#39FF14">Normal </div>
-                                        <div v-if="knn.tinggi == 3" style="color:yellow">Pendek</div>
+                                        <div v-if="knn.tinggi == 3" style="color:orange">Pendek</div>
                                         <div v-if="knn.tinggi == 4" style="color:red">S. Pendek</div>
-                                        <div v-if="knn.gizi == null">---------</div>
+                                        <div v-if="knn.tinggi == null">---------</div>
                                     </td>
                                     <td>
                                         <router-link :to="{ name: 'knn.detail', params: { id: knn.id } }"

@@ -53,11 +53,11 @@
                                     <td>{{ balita.nama }}</td>
                                     <td>
                                         <div class="btn-group">
-                                            <router-link :to="{ name: 'balita.edit', params: { id: balita.id } }"
+                                            <router-link :to="{ name: 'balita.edit', params: { id: balita.idb } }"
                                                 class="btn btn-sm btn-outline-info">
                                                 Edit</router-link>
                                             <button class="btn btn-sm btn-outline-danger"
-                                                @click.prevent="destroy(balita.id, index)">
+                                                @click.prevent="destroy(balita.idb, index)">
                                                 Delete
                                             </button>
                                         </div>

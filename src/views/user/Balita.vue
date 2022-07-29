@@ -88,20 +88,8 @@ export default {
                 })
         });
 
-        function destroy(id, index) {
-            axios.delete(
-                `http://127.0.0.1:8000/api/balita/${id}`
-            )
-                .then(() => {
-                    balitas.value.data.splice(index, 1)
-                }).catch((err) => {
-                    console.log(err.response.data);
-                });
-        }
-
         return {
-            balitas,
-            destroy
+            balitas
         }
     }
 }
