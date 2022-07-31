@@ -32,9 +32,7 @@
     <div class="container my-5">
         <div class="row justify-content-center">
             <div class="col-8">
-                <router-link :to="{ name: 'dataset.create' }" class="btn btn-primary btn-sm rounded shadow mb-3">
-                    Dataset Baru
-                </router-link>
+
 
                 <div class="card rounded shadow">
                     <div class="card-header">Dataset KNN</div>
@@ -60,28 +58,26 @@
                                     <td>{{ dataset.dbb }} kg</td>
                                     <td>{{ dataset.dtb }} cm</td>
                                     <td>
-                                        <div v-if="dataset.dgizi == 1" style="color:red">Lebih</div>
-                                        <div v-if="dataset.dgizi == 2" style="color:green">Normal </div>
-                                        <div v-if="dataset.dgizi == 3" style="color:yellow"> Kurang</div>
-                                        <div v-if="dataset.dgizi == 4">Buruk</div>
+                                        <div v-if="dataset.dgizi == 1" style="color:green">Lebih</div>
+                                        <div v-if="dataset.dgizi == 2" style="color:#39FF14">Normal </div>
+                                        <div v-if="dataset.dgizi == 3" style="color:orange"> Kurang</div>
+                                        <div v-if="dataset.dgizi == 4" style="color:red">Buruk</div>
                                     </td>
                                     <td>
-                                        <div v-if="dataset.dberat == 1" style="color:red">Gemuk</div>
-                                        <div v-if="dataset.dberat == 2" style="color:green">Normal </div>
-                                        <div v-if="dataset.dberat == 3" style="coloyellow">Kurus</div>
-                                        <div v-if="dataset.dberat == 4">S. Kurus</div>
+                                        <div v-if="dataset.dberat == 1" style="color:green">Gemuk</div>
+                                        <div v-if="dataset.dberat == 2" style="color:#39FF14">Normal </div>
+                                        <div v-if="dataset.dberat == 3" style="color:orange">Kurus</div>
+                                        <div v-if="dataset.dberat == 4" style="color:red">S. Kurus</div>
                                     </td>
                                     <td>
-                                        <div v-if="dataset.dtinggi == 1" style="color:red">Tinggi</div>
-                                        <div v-if="dataset.dtinggi == 2" style="color:green">Normal </div>
-                                        <div v-if="dataset.dtinggi == 3" style="color:yellow"> Pendek</div>
-                                        <div v-if="dataset.dtinggi == 4">S. Pendek</div>
+                                        <div v-if="dataset.dtinggi == 1" style="color:green">Tinggi</div>
+                                        <div v-if="dataset.dtinggi == 2" style="color:#39FF14">Normal </div>
+                                        <div v-if="dataset.dtinggi == 3" style="color:orange"> Pendek</div>
+                                        <div v-if="dataset.dtinggi == 4" style="color:red">S. Pendek</div>
                                     </td>
                                     <td>
                                         <div class="btn-group">
-                                            <router-link :to="{ name: 'dataset.edit', params: { id: dataset.id } }"
-                                                class="btn btn-sm btn-outline-info">
-                                                Edit</router-link>
+
                                             <button class="btn btn-sm btn-outline-danger"
                                                 @click.prevent="destroy(dataset.id, index)">
                                                 Delete

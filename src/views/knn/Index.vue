@@ -61,7 +61,20 @@
                                     <td>{{ knn.u }} bulan</td>
                                     <td>{{ knn.bb }} kg</td>
                                     <td>{{ knn.tb }} cm</td>
-                                    <td>{{ knn.bulan }}</td>
+                                    <td>
+                                        <label v-if="knn.bulan == 1">Januari</label>
+                                        <label v-if="knn.bulan == 2"> Februari</label>
+                                        <label v-if="knn.bulan == 3">Maret</label>
+                                        <label v-if="knn.bulan == 4">April</label>
+                                        <label v-if="knn.bulan == 5">Mei</label>
+                                        <label v-if="knn.bulan == 6">Juni</label>
+                                        <label v-if="knn.bulan == 7">Juli</label>
+                                        <label v-if="knn.bulan == 8">Agustus</label>
+                                        <label v-if="knn.bulan == 9">September</label>
+                                        <label v-if="knn.bulan == 10">Oktober</label>
+                                        <label v-if="knn.bulan == 11">November</label>
+                                        <label v-if="knn.bulan == 12">Desember</label>
+                                    </td>
                                     <td>
                                         <div v-if="knn.gizi == 1" style="color:green">Lebih</div>
                                         <div v-if="knn.gizi == 2" style="color:#39FF14">Normal </div>
@@ -77,7 +90,7 @@
                                         <div v-if="knn.berat == null">---------</div>
                                     </td>
                                     <td>
-                                        <div v-if="knn.tinggi == 1" style="color:red">Tinggi</div>
+                                        <div v-if="knn.tinggi == 1" style="color:green">Tinggi</div>
                                         <div v-if="knn.tinggi == 2" style="color:#39FF14">Normal </div>
                                         <div v-if="knn.tinggi == 3" style="color:orange">Pendek</div>
                                         <div v-if="knn.tinggi == 4" style="color:red">S. Pendek</div>

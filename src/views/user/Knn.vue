@@ -53,7 +53,20 @@
                                     <td>{{ knn.u }} bulan</td>
                                     <td>{{ knn.bb }} kg</td>
                                     <td>{{ knn.tb }} cm</td>
-                                    <td>{{ knn.bulan }}</td>
+                                    <td>
+                                        <label v-if="knn.bulan == 1">Januari</label>
+                                        <label v-if="knn.bulan == 2"> Februari</label>
+                                        <label v-if="knn.bulan == 3">Maret</label>
+                                        <label v-if="knn.bulan == 4">April</label>
+                                        <label v-if="knn.bulan == 5">Mei</label>
+                                        <label v-if="knn.bulan == 6">Juni</label>
+                                        <label v-if="knn.bulan == 7">Juli</label>
+                                        <label v-if="knn.bulan == 8">Agustus</label>
+                                        <label v-if="knn.bulan == 9">September</label>
+                                        <label v-if="knn.bulan == 10">Oktober</label>
+                                        <label v-if="knn.bulan == 11">November</label>
+                                        <label v-if="knn.bulan == 12">Desember</label>
+                                    </td>
                                     <td>
                                         <div v-if="knn.gizi == 1" style="color:green">Lebih</div>
                                         <div v-if="knn.gizi == 2" style="color:#39FF14">Normal </div>
@@ -115,18 +128,6 @@ export default {
         //status reactif
         let knns = ref([]);
 
-        let aksis = ref([]);
-
-        onMounted(() => {
-            //ambil data dari api
-            axios.get('http://127.0.0.1:8000/api/aksi')
-                .then((result) => {
-                    aksis.value = result.data
-                }).catch((err) => {
-                    console.log(err.response)
-                })
-        });
-
         onMounted(() => {
             //ambil data dari api
             axios.get('http://127.0.0.1:8000/api/knn')
@@ -149,7 +150,6 @@ export default {
         }
 
         return {
-            aksis,
             knns,
             destroy
         }

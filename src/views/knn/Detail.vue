@@ -52,8 +52,6 @@
                                 <label for="" class="form-label">Tinggi Balita : {{ knn.tb }} Cm</label>
                                 <br>
 
-
-
                                 <label for="" class="form-label">Bulan Pengukuran :</label>
                                 <label v-if="knn.bulan == 1">Januari</label>
                                 <label v-if="knn.bulan == 2"> Februari</label>
@@ -68,7 +66,6 @@
                                 <label v-if="knn.bulan == 11">November</label>
                                 <label v-if="knn.bulan == 12">Desember</label>
                                 <br>
-
 
                             </div>
 
@@ -115,10 +112,11 @@
                             <!-- gizi Kurang -->
                             <div v-if="knn.gizi == 3">
                                 <p class=" card-text" style="text-align:center">
-                                    Gizi kurang
+                                    Perhatikan gizi serta konsumsi dengan gizi yang cukup pada anak.
+                                    pemberian asi ekslusif pada anak juga.
                                 </p>
                                 <ul>
-                                    <li></li>
+                                    <li> Komposisi gizi Makanan si ibu (jika pemberian asi)</li>
                                 </ul>
                             </div>
                             <!-- gizi buruk -->
