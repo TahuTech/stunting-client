@@ -11,7 +11,7 @@
                             <div class="form-outline mb-4">
 
                                 <input type="email" id="typeEmailX-2" class="form-control form-control-lg"
-                                    placeholder="Email" />
+                                    placeholder="Username" />
                             </div>
 
                             <div class="form-outline mb-4">
