@@ -27,7 +27,7 @@
 
     <div class="container my-5">
         <div class="row justify-content-center">
-            <div class="col-5">
+            <div class="col-6">
 
                 <div class="card rounded shadow">
                     <div class="card-header">List Balita</div>
@@ -36,6 +36,7 @@
                             <thead>
                                 <tr>
                                     <th>No</th>
+                                    <th>NIK</th>
                                     <th>Nama Balita</th>
                                 </tr>
                             </thead>
@@ -43,6 +44,7 @@
                                 <tr v-for="(balita, index) in balitas.data" :key="index">
                                     <td>
                                     </td>
+                                    <td>{{ balita.nik }}</td>
                                     <td>{{ balita.nama }}</td>
                                 </tr>
                             </tbody>

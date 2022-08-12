@@ -40,6 +40,12 @@
                     <div class="card-body">
                         <form @submit.prevent="update()">
                             <div class="mb-3">
+                                <label for="" class="form-label">NIK Balita</label>
+                                <input type="text" class="form-control" v-model="balita.nik">
+                                <div v-if="validation.nik" class="text-danger">
+                                    {{ validation.nik[0] }}
+                                </div>
+
                                 <label for="" class="form-label">Nama Balita</label>
                                 <input type="text" class="form-control" v-model="balita.nama">
                                 <div v-if="validation.nama" class="text-danger">
@@ -64,7 +70,8 @@ export default {
     setup() {
         //data binding
         let balita = reactive({
-            nama: '',
+            nik: '',
+            nama: ''
         });
 
         const validation = ref([]);
@@ -75,7 +82,8 @@ export default {
         onMounted(() => {
             axios.get(`http://127.0.0.1:8000/api/balita/${route.params.id}`)
                 .then((result) => {
-                    balita.nama = result.data.data.nama
+                    balita.nik = result.data.data.nik,
+                        balita.nama = result.data.data.nama
                 }).catch((err) => {
                     console.log(err.response.data)
                 });

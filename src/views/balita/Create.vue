@@ -40,6 +40,12 @@
                     <div class="card-body">
                         <form @submit.prevent="store()">
                             <div class="mb-3">
+                                <label for="" class="form-label">NIK</label>
+                                <input type="text" class="form-control" v-model="balita.nik">
+                                <div v-if="validation.nik" class="text-danger">
+                                    {{ validation.nik[0] }}
+                                </div>
+
                                 <label for="" class="form-label">Nama Balita</label>
                                 <input type="text" class="form-control" v-model="balita.nama">
                                 <div v-if="validation.nama" class="text-danger">
@@ -64,7 +70,8 @@ export default {
     setup() {
         //data binding
         const balita = reactive({
-            nama: '',
+            nik: '',
+            nama: ''
         });
 
         const validation = ref([]);

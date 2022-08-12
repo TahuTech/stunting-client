@@ -42,6 +42,7 @@
                             <thead>
                                 <tr>
                                     <th>No</th>
+                                    <th>NIK</th>
                                     <th>Nama Balita</th>
                                     <th>Action</th>
                                 </tr>
@@ -50,6 +51,7 @@
                                 <tr v-for="(balita, index) in balitas.data" :key="index">
                                     <td>
                                     </td>
+                                    <td>{{ balita.nik }}</td>
                                     <td>{{ balita.nama }}</td>
                                     <td>
                                         <div class="btn-group">
