@@ -41,9 +41,9 @@
                         <form @submit.prevent="store()">
                             <div class="mb-3">
                                 <label for="" class="form-label">NIK</label>
-                                <input type="text" class="form-control" v-model="balita.nik">
-                                <div v-if="validation.nik" class="text-danger">
-                                    {{ validation.nik[0] }}
+                                <input type="text" class="form-control" v-model="balita.idb">
+                                <div v-if="validation.idb" class="text-danger">
+                                    {{ validation.idb[0] }}
                                 </div>
 
                                 <label for="" class="form-label">Nama Balita</label>
@@ -70,7 +70,7 @@ export default {
     setup() {
         //data binding
         const balita = reactive({
-            nik: '',
+            idb: '',
             nama: ''
         });
 

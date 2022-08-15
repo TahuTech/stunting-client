@@ -41,9 +41,9 @@
                         <form @submit.prevent="update()">
                             <div class="mb-3">
                                 <label for="" class="form-label">NIK Balita</label>
-                                <input type="text" class="form-control" v-model="balita.nik">
-                                <div v-if="validation.nik" class="text-danger">
-                                    {{ validation.nik[0] }}
+                                <input type="text" class="form-control" v-model="balita.idb">
+                                <div v-if="validation.idb" class="text-danger">
+                                    {{ validation.idb[0] }}
                                 </div>
 
                                 <label for="" class="form-label">Nama Balita</label>
@@ -70,7 +70,7 @@ export default {
     setup() {
         //data binding
         let balita = reactive({
-            nik: '',
+            idb: '',
             nama: ''
         });
 
@@ -82,7 +82,7 @@ export default {
         onMounted(() => {
             axios.get(`http://127.0.0.1:8000/api/balita/${route.params.id}`)
                 .then((result) => {
-                    balita.nik = result.data.data.nik,
+                    balita.idb = result.data.data.idb,
                         balita.nama = result.data.data.nama
                 }).catch((err) => {
                     console.log(err.response.data)

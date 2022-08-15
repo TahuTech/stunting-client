@@ -51,7 +51,10 @@
                                 <tr v-for="(balita, index) in balitas.data" :key="index">
                                     <td>
                                     </td>
-                                    <td>{{ balita.nik }}</td>
+                                    <td>
+                                        <div v-if="balita.idb == 0" style="color:Red">Belum Punya</div>
+                                        <div v-else>{{ balita.idb }}</div>
+                                    </td>
                                     <td>{{ balita.nama }}</td>
                                     <td>
                                         <div class="btn-group">
