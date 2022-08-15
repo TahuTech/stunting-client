@@ -47,6 +47,7 @@
                                     <th>Gizi</th>
                                     <th>Berat</th>
                                     <th>Tinggi</th>
+                                    <th>Stunting</th>
                                     <th>Action</th>
                                 </tr>
                             </thead>
@@ -74,6 +75,10 @@
                                         <div v-if="dataset.dtinggi == 2" style="color:#39FF14">Normal </div>
                                         <div v-if="dataset.dtinggi == 3" style="color:orange"> Pendek</div>
                                         <div v-if="dataset.dtinggi == 4" style="color:red">S. Pendek</div>
+                                    </td>
+                                    <td>
+                                        <div v-if="dataset.dstunting == 1" style="color:red">Stunting</div>
+                                        <div v-if="dataset.dstunting == 2" style="color:green">Normal </div>
                                     </td>
                                     <td>
                                         <div class="btn-group">
