@@ -18,6 +18,9 @@
                         <a class="nav-link active" href="/user/saran">Saran</a>
                     </li>
                     <li class="nav-item">
+                        <a class="nav-link" href="/user/statistik">Statistik</a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link" href="/user/about">About</a>
                     </li>
                 </ul>

@@ -21,6 +21,9 @@
             <a class="nav-link " href="/dataset">Dataset</a>
           </li>
           <li class="nav-item">
+            <a class="nav-link" href="/statistik">Statistik</a>
+          </li>
+          <li class="nav-item">
             <a class="nav-link" href="/about">About</a>
           </li>
         </ul>

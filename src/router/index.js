@@ -28,6 +28,13 @@ const routes = [
         component: () => import("../views/admin/Index.vue")
     },
 
+    //statistik
+    {
+        path: '/statistik',
+        name: 'statistik.index',
+        component: () => import("../views/statistik/Index.vue")
+    },
+
     //user
     {
         path: '/user',
@@ -57,6 +64,12 @@ const routes = [
         path: '/user/about',
         name: 'user.about',
         component: () => import("../views/user/About.vue")
+    },
+    //user statistik
+    {
+        path: '/user/statistik',
+        name: 'user.statistik',
+        component: () => import("../views/user/Statistik.vue")
     },
 
 

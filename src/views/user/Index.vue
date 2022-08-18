@@ -18,6 +18,9 @@
                         <a class="nav-link" href="/user/saran">Saran</a>
                     </li>
                     <li class="nav-item">
+                        <a class="nav-link" href="/user/statistik">Statistik</a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link" href="/user/about">About</a>
                     </li>
                 </ul>
@@ -35,12 +38,19 @@
                     <div class="card rounded shadow">
                         <div class="card-body my-4">
                             <p style="text-align: center"> Ialah website dimana untuk membantu mengklafikasikan balita
-                                tergolong dalam gizi
-                                (BB/U) yaitu gizi lebih, gizi baik, gizi kurang, atau gizi buruk; Tinggi (TB/U) yaitu
-                                sangat
-                                pendek, pendek, normal, tinggi; serta berat (BB/TB) yaitu sangat kurus, kurus, normal,
-                                dan
-                                gemuk. </p>
+                                dalam keadaan stunting (metode K-Nearest Neigbours)
+                                dengan proses menentukan : </p>
+                            <ol>
+                                <li>Gizi (BB/U)
+                                    yaitu gizi lebih, gizi baik, gizi kurang, atau gizi buruk.
+                                </li>
+                                <li>Tinggi (TB/U)
+                                    yaitu tinggi, normal, pendek, atau sangat pendek.
+                                </li>
+                                <li>Berat (BB/TB)
+                                    yaitu gemuk, normal, kurus atau sangat kurus.
+                                </li>
+                            </ol>
                         </div>
                         <br>
                         <p style="text-align:center">Nur Ali Sholikhin 18053036</p>
