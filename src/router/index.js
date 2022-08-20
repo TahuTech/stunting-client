@@ -53,6 +53,12 @@ const routes = [
         name: 'user.knn',
         component: () => import("../views/user/Knn.vue")
     },
+    //user detail knn
+    {
+        path: '/user/knndetail',
+        name: 'user.knndetail',
+        component: () => import("../views/user/Knndetail.vue")
+    },
     //user saran
     {
         path: '/user/saran',

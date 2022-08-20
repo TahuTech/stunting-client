@@ -43,9 +43,7 @@
                                     <th>BB(kg)</th>
                                     <th>TB(cm)</th>
                                     <th>Bulan</th>
-                                    <th>Gizi</th>
-                                    <th>Berat</th>
-                                    <th>Tinggi</th>
+                                    <th>Stunting</th>
                                     <th></th>
                                 </tr>
                             </thead>
@@ -71,32 +69,15 @@
                                         <label v-if="knn.bulan == 12">Desember</label>
                                     </td>
                                     <td>
-                                        <div v-if="knn.gizi == 1" style="color:green">Lebih</div>
-                                        <div v-if="knn.gizi == 2" style="color:#39FF14">Normal </div>
-                                        <div v-if="knn.gizi == 3" style="color:orange">Kurang</div>
-                                        <div v-if="knn.gizi == 4" style="color:red">Buruk</div>
-                                        <div v-if="knn.gizi == null">---------</div>
+                                        <div v-if="knn.stunting == 1" style="color:green">Stunting</div>
+                                        <div v-if="knn.stunting == 2" style="color:#39FF14">Normal </div>
+                                        <div v-if="knn.stunting == null">---------</div>
                                     </td>
                                     <td>
-                                        <div v-if="knn.berat == 1" style="color:green">Gemuk</div>
-                                        <div v-if="knn.berat == 2" style="color:#39FF14">Normal </div>
-                                        <div v-if="knn.berat == 3" style="color:orange">Kurus</div>
-                                        <div v-if="knn.berat == 4" style="color:red">S. Kurus</div>
-                                        <div v-if="knn.berat == null">---------</div>
-                                    </td>
-                                    <td>
-                                        <div v-if="knn.tinggi == 1" style="color:red">Tinggi</div>
-                                        <div v-if="knn.tinggi == 2" style="color:#39FF14">Normal </div>
-                                        <div v-if="knn.tinggi == 3" style="color:orange">Pendek</div>
-                                        <div v-if="knn.tinggi == 4" style="color:red">S. Pendek</div>
-                                        <div v-if="knn.tinggi == null">---------</div>
-                                    </td>
-                                    <td>
-                                        <router-link :to="{ name: 'knn.detail', params: { id: knn.id } }"
+                                        <router-link :to="{ name: 'user.knndetail', params: { id: knn.id } }"
                                             class="btn btn-sm btn-outline-warning">
                                             Detail</router-link>
                                     </td>
-
                                 </tr>
                             </tbody>
                         </table>
