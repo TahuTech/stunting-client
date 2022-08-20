@@ -53,9 +53,7 @@
                                     <td>{{ saran.isi }}</td>
                                     <td>
                                         <div class="btn-group">
-                                            <router-link :to="{ name: 'saran.edit', params: { id: saran.id } }"
-                                                class="btn btn-sm btn-outline-info">
-                                                Edit</router-link>
+
                                             <button class="btn btn-sm btn-outline-danger"
                                                 @click.prevent="destroy(saran.id, index)">
                                                 Delete
