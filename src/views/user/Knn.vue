@@ -69,7 +69,7 @@
                                         <label v-if="knn.bulan == 12">Desember</label>
                                     </td>
                                     <td>
-                                        <div v-if="knn.stunting == 1" style="color:green">Stunting</div>
+                                        <div v-if="knn.stunting == 1" style="color:red">Stunting</div>
                                         <div v-if="knn.stunting == 2" style="color:#39FF14">Normal </div>
                                         <div v-if="knn.stunting == null">---------</div>
                                     </td>

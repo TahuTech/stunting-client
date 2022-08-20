@@ -53,7 +53,7 @@
                                 <label for="" class="form-label">Tinggi Balita : {{ knn.tb }} Cm</label>
                                 <br>
 
-                                <label for="" class="form-label">Bulan Pengukuran :</label>
+                                <label for="" class="form-label">Bulan Pengukuran : </label>
                                 <label v-if="knn.bulan == 1">Januari</label>
                                 <label v-if="knn.bulan == 2"> Februari</label>
                                 <label v-if="knn.bulan == 3">Maret</label>
@@ -132,9 +132,6 @@
                             </div>
 
                         </div>
-                        <div class="card-footer">
-
-                        </div>
                     </div>
 
 
@@ -200,8 +197,6 @@
 
 
                         </div>
-                        <div class="card-footer">
-                        </div>
                     </div>
 
 
@@ -259,12 +254,15 @@
                             </div>
 
                         </div>
-                        <div class="card-footer">
-
-                        </div>
                     </div>
                 </div>
 
+                <div class="card">
+                    <div class="card-header" style="text-align:center">
+                        <div v-if="knn.stunting == 1" style="color:red">Balita Termasuk Stunting </div>
+                        <div v-if="knn.stunting == 2" style="color:dark green">Balita Normal</div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -286,7 +284,8 @@ export default {
             bulan: '',
             gizi: '',
             berat: '',
-            tinggi: ''
+            tinggi: '',
+            stunting: ''
         });
 
         const validation = ref([]);
@@ -304,7 +303,8 @@ export default {
                         knn.bulan = result.data.data.bulan,
                         knn.gizi = result.data.data.gizi,
                         knn.berat = result.data.data.berat,
-                        knn.tinggi = result.data.data.tinggi
+                        knn.tinggi = result.data.data.tinggi,
+                        knn.stunting = result.data.data.stunting
                 }).catch((err) => {
                     console.log(err.response.data)
                 });
