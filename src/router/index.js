@@ -34,6 +34,18 @@ const routes = [
         name: 'statistik.index',
         component: () => import("../views/statistik/Index.vue")
     },
+    //statistik normal
+    {
+        path: '/statistik/normal',
+        name: 'statistik.normal',
+        component: () => import("../views/statistik/Normal.vue")
+    },
+    //statistik stunting
+    {
+        path: '/statistik/stun',
+        name: 'statistik.stun',
+        component: () => import("../views/statistik/Stun.vue")
+    },
 
     //user
     {

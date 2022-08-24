@@ -15,13 +15,13 @@
                         <a class="nav-link " href="/knn">KNN</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="/saran">Saran</a>
+                        <a class="nav-link " href="/saran">Saran</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="/dataset">Dataset</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/statistik">Statistik</a>
+                        <a class="nav-link active" href="/statistik">Statistik</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="/about">About</a>
@@ -37,34 +37,83 @@
             <div class="col-8">
 
                 <div class="card rounded shadow">
-                    <div class="card-header">Kumpulan Saran</div>
+                    <div class="card-header">Statistik Website</div>
                     <div class="card-body">
-                        <table class="table">
-                            <thead>
-                                <tr>
-                                    <th>No</th>
-                                    <th>Isi Saran</th>
-                                    <th>Action</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr v-for="(saran, index) in sarans.data" :key="index">
-                                    <td></td>
-                                    <td>{{ saran.isi }}</td>
-                                    <td>
-                                        <div class="btn-group">
-                                            <router-link :to="{ name: 'saran.edit', params: { id: saran.id } }"
-                                                class="btn btn-sm btn-outline-info">
-                                                Edit</router-link>
-                                            <button class="btn btn-sm btn-outline-danger"
-                                                @click.prevent="destroy(saran.id, index)">
-                                                Delete
-                                            </button>
-                                        </div>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
+                        <div></div>
+                        <h6></h6>
+                        <ul>
+                            <li>Balita Terdaftar di Posyandu Mawar Jingga :</li>
+                            <li>Jumlah Balita Normal : </li>
+                            <li>Jumlah Balita Menderita Stunting : </li>
+                        </ul>
+
+                        <div class="btn-group">
+                            <router-link :to="{ name: 'balita.index' }" class="btn btn-sm btn-secondary">
+                                Daftar Balita</router-link>
+                            <router-link :to="{ name: 'statistik.stun' }" class="btn btn-sm btn-danger">
+                                Daftar Balita Stunting</router-link>
+                            <router-link :to="{ name: 'statistik.normal' }" class="btn btn-sm btn-success">
+                                Daftar Balita Normal</router-link>
+                        </div>
+                        <br><br>
+
+                        <h6>Status Gizi</h6>
+                        <ul>
+                            <li>Jumlah Balita Gizi Lebih : </li>
+                            <li>Jumlah Balita Gizi Baik : </li>
+                            <li>Jumlah Balita Gizi Kurang : </li>
+                            <li>Jumlah Balita Gizi Buruk : </li>
+                        </ul>
+                        <div class="btn-group">
+                            <router-link :to="{ name: 'balita.index' }" class="btn btn-sm btn-info">
+                                Gizi Lebih</router-link>
+                            <router-link :to="{ name: 'balita.index' }" class="btn btn-sm btn-success">
+                                Gizi Baik</router-link>
+                            <router-link :to="{ name: 'balita.index' }" class="btn btn-sm btn-warning">
+                                Gizi Kurang</router-link>
+                            <router-link :to="{ name: 'balita.index' }" class="btn btn-sm btn-danger">
+                                Gizi Buruk</router-link>
+                        </div>
+                        <br><br>
+
+                        <h6>Status Tinggi Badan</h6>
+                        <ul>
+                            <li>Jumlah Balita Tubuh Tinggi : </li>
+                            <li>Jumlah Balita Tubuh Normal : </li>
+                            <li>Jumlah Balita Tubuh Pendek : </li>
+                            <li>Jumlah Balita Tubuh S.Pendek : </li>
+                        </ul>
+                        <div class="btn-group">
+                            <router-link :to="{ name: 'balita.index' }" class="btn btn-sm btn-info">
+                                Tubuh Tinggi</router-link>
+                            <router-link :to="{ name: 'balita.index' }" class="btn btn-sm btn-success">
+                                Tinggi Normal</router-link>
+                            <router-link :to="{ name: 'balita.index' }" class="btn btn-sm btn-warning">
+                                Tinggi Pendek</router-link>
+                            <router-link :to="{ name: 'balita.index' }" class="btn btn-sm btn-danger">
+                                Tinggi S.Pendek</router-link>
+                        </div>
+                        <br><br>
+
+                        <h6>Status Berat Badan</h6>
+                        <ul>
+                            <li>Jumlah Balita Obesitas : </li>
+                            <li>Jumlah Balita Berat Normal : </li>
+                            <li>Jumlah Balita Kurus : </li>
+                            <li>Jumlah Balita S.Kurus : </li>
+                        </ul>
+                        <div class="btn-group">
+                            <router-link :to="{ name: 'balita.index' }" class="btn btn-sm btn-info">
+                                Balita Obesitas</router-link>
+                            <router-link :to="{ name: 'balita.index' }" class="btn btn-sm btn-success">
+                                Berat Normal</router-link>
+                            <router-link :to="{ name: 'balita.index' }" class="btn btn-sm btn-warning">
+                                Balita Kurus</router-link>
+                            <router-link :to="{ name: 'balita.index' }" class="btn btn-sm btn-danger">
+                                Balita S.Kurus</router-link>
+                        </div>
+                        <br><br>
+
                     </div>
                 </div>
             </div>
@@ -72,20 +121,7 @@
     </div>
 </template>
 
-<style>
-table {
-    width: 50%;
-    counter-reset: row-num -1;
-}
 
-table tr {
-    counter-increment: row-num;
-}
-
-table tr td:first-child::before {
-    content: counter(row-num) ". ";
-}
-</style>
 
 <script>
 import axios from 'axios'
@@ -94,32 +130,20 @@ import { onMounted, ref } from 'vue'
 export default {
     setup() {
         //status reactif
-        let sarans = ref([]);
+        let infos = ref([]);
 
         onMounted(() => {
             //ambil data dari api
-            axios.get('http://127.0.0.1:8000/api/saran')
+            axios.get('http://127.0.0.1:8000/api/info')
                 .then((result) => {
-                    sarans.value = result.data
+                    infos.value = result.data
                 }).catch((err) => {
                     console.log(err.response)
                 })
         });
 
-        function destroy(id, index) {
-            axios.delete(
-                `http://127.0.0.1:8000/api/saran/${id}`
-            )
-                .then(() => {
-                    sarans.value.data.splice(index, 1)
-                }).catch((err) => {
-                    console.log(err.response.data);
-                });
-        }
-
         return {
-            sarans,
-            destroy
+            infos
         }
     }
 }
