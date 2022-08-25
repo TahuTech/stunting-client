@@ -48,7 +48,7 @@
                         </ul>
 
                         <div class="btn-group">
-                            <router-link :to="{ name: 'balita.index' }" class="btn btn-sm btn-secondary">
+                            <router-link :to="{ name: 'statistik.all' }" class="btn btn-sm btn-secondary">
                                 Daftar Balita</router-link>
                             <router-link :to="{ name: 'statistik.stun' }" class="btn btn-sm btn-danger">
                                 Daftar Balita Stunting</router-link>

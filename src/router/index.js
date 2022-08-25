@@ -34,6 +34,12 @@ const routes = [
         name: 'statistik.index',
         component: () => import("../views/statistik/Index.vue")
     },
+     //statistik allbb
+    {
+        path: '/statistik/all',
+        name: 'statistik.all',
+        component: () => import("../views/statistik/Allbb.vue")
+    },
     //statistik normal
     {
         path: '/statistik/normal',
