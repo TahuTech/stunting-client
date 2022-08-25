@@ -53,6 +53,31 @@ const routes = [
         component: () => import("../views/statistik/Stun.vue")
     },
 
+    //statistik gizi baik
+    {
+        path: '/statistik/gizba',
+        name: 'statistik.gizba',
+        component: () => import("../views/statistik/gizi/Gizbai.vue")
+    },
+    //statistik gizi buruk
+    {
+        path: '/statistik/gizbu',
+        name: 'statistik.gizbu',
+        component: () => import("../views/statistik/gizi/Gizbur.vue")
+    },
+    //statistik gizi kurang
+    {
+        path: '/statistik/gizku',
+        name: 'statistik.gizku',
+        component: () => import("../views/statistik/gizi/Gizkura.vue")
+    },
+    //statistik gizi lebih
+    {
+        path: '/statistik/gizle',
+        name: 'statistik.gizle',
+        component: () => import("../views/statistik/gizi/Gizle.vue")
+    },
+
     //user
     {
         path: '/user',

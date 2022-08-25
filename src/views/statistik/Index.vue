@@ -65,13 +65,13 @@
                             <li>Jumlah Balita Gizi Buruk : </li>
                         </ul>
                         <div class="btn-group">
-                            <router-link :to="{ name: 'balita.index' }" class="btn btn-sm btn-info">
+                            <router-link :to="{ name: 'statistik.gizle' }" class="btn btn-sm btn-info">
                                 Gizi Lebih</router-link>
-                            <router-link :to="{ name: 'balita.index' }" class="btn btn-sm btn-success">
+                            <router-link :to="{ name: 'statistik.gizba' }" class="btn btn-sm btn-success">
                                 Gizi Baik</router-link>
-                            <router-link :to="{ name: 'balita.index' }" class="btn btn-sm btn-warning">
+                            <router-link :to="{ name: 'statistik.gizku' }" class="btn btn-sm btn-warning">
                                 Gizi Kurang</router-link>
-                            <router-link :to="{ name: 'balita.index' }" class="btn btn-sm btn-danger">
+                            <router-link :to="{ name: 'statistik.gizbu' }" class="btn btn-sm btn-danger">
                                 Gizi Buruk</router-link>
                         </div>
                         <br><br>
