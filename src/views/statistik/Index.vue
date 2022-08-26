@@ -40,12 +40,22 @@
                     <div class="card-header">Statistik Website</div>
                     <div class="card-body">
                         <div></div>
-                        <h6></h6>
-                        <ul>
-                            <li>Balita Terdaftar di Posyandu Mawar Jingga :</li>
-                            <li>Jumlah Balita Normal : </li>
-                            <li>Jumlah Balita Menderita Stunting : </li>
-                        </ul>
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>Jumlah Balita</th>
+                                    <th>Normal</th>
+                                    <th>Stunting</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr v-for="(info, index) in infos.data" :key="index">
+                                    <td>{{ info.jmlbb }} anak</td>
+                                    <td>{{ info.norm }} anak</td>
+                                    <td>{{ info.stun }} anak</td>
+                                </tr>
+                            </tbody>
+                        </table>
 
                         <div class="btn-group">
                             <router-link :to="{ name: 'statistik.all' }" class="btn btn-sm btn-secondary">
@@ -57,13 +67,25 @@
                         </div>
                         <br><br>
 
-                        <h6>Status Gizi</h6>
-                        <ul>
-                            <li>Jumlah Balita Gizi Lebih : </li>
-                            <li>Jumlah Balita Gizi Baik : </li>
-                            <li>Jumlah Balita Gizi Kurang : </li>
-                            <li>Jumlah Balita Gizi Buruk : </li>
-                        </ul>
+                        <h6>Status Gizi Anak</h6>
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>Gizi Lebih</th>
+                                    <th>Gizi Baik</th>
+                                    <th>Gizi Kurang</th>
+                                    <th>Gizi Buruk</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr v-for="(info, index) in infos.data" :key="index">
+                                    <td>{{ info.gizle }} Anak</td>
+                                    <td>{{ info.gizba }} Anak</td>
+                                    <td>{{ info.gizku }} Anak</td>
+                                    <td>{{ info.gizbu }} Anak</td>
+                                </tr>
+                            </tbody>
+                        </table>
                         <div class="btn-group">
                             <router-link :to="{ name: 'statistik.gizle' }" class="btn btn-sm btn-info">
                                 Gizi Lebih</router-link>
@@ -76,13 +98,25 @@
                         </div>
                         <br><br>
 
-                        <h6>Status Tinggi Badan</h6>
-                        <ul>
-                            <li>Jumlah Balita Tubuh Tinggi : </li>
-                            <li>Jumlah Balita Tubuh Normal : </li>
-                            <li>Jumlah Balita Tubuh Pendek : </li>
-                            <li>Jumlah Balita Tubuh S.Pendek : </li>
-                        </ul>
+                        <h6>Status Tinggi Badan Anak</h6>
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>Tinggi Lebih</th>
+                                    <th>Tinggi Normal</th>
+                                    <th>Tubuh Pendek</th>
+                                    <th>Tubuh Sangat Pendek</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr v-for="(info, index) in infos.data" :key="index">
+                                    <td>{{ info.tintin }} Anak</td>
+                                    <td>{{ info.tinnor }} Anak</td>
+                                    <td>{{ info.tinpen }} Anak</td>
+                                    <td>{{ info.tinspen }} Anak</td>
+                                </tr>
+                            </tbody>
+                        </table>
                         <div class="btn-group">
                             <router-link :to="{ name: 'balita.index' }" class="btn btn-sm btn-info">
                                 Tubuh Tinggi</router-link>
@@ -95,13 +129,25 @@
                         </div>
                         <br><br>
 
-                        <h6>Status Berat Badan</h6>
-                        <ul>
-                            <li>Jumlah Balita Obesitas : </li>
-                            <li>Jumlah Balita Berat Normal : </li>
-                            <li>Jumlah Balita Kurus : </li>
-                            <li>Jumlah Balita S.Kurus : </li>
-                        </ul>
+                        <h6>Status Berat Badan Anak</h6>
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>Berat Berebih</th>
+                                    <th>Berat Normal</th>
+                                    <th>Badan Kurus</th>
+                                    <th>Badan Sangat Kurus</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr v-for="(info, index) in infos.data" :key="index">
+                                    <td>{{ info.berle }} Anak</td>
+                                    <td>{{ info.berba }} Anak</td>
+                                    <td>{{ info.berku }} Anak</td>
+                                    <td>{{ info.bersku }} Anak</td>
+                                </tr>
+                            </tbody>
+                        </table>
                         <div class="btn-group">
                             <router-link :to="{ name: 'balita.index' }" class="btn btn-sm btn-info">
                                 Balita Obesitas</router-link>
