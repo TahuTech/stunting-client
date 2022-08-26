@@ -179,6 +179,16 @@ export default {
         let infos = ref([]);
 
         onMounted(() => {
+            //jalankan fuction endpoint
+            axios.get('http://127.0.0.1:8000/api/count')
+                .then((result) => {
+                    infos.value = result.data
+                }).catch((err) => {
+                    console.log(err.response)
+                })
+        });
+
+        onMounted(() => {
             //ambil data dari api
             axios.get('http://127.0.0.1:8000/api/info')
                 .then((result) => {
@@ -187,6 +197,8 @@ export default {
                     console.log(err.response)
                 })
         });
+
+
 
         return {
             infos
