@@ -43,26 +43,27 @@
           <div class="card-body">
             <form @submit.prevent="store()">
               <div class="mb-3">
-                <label for="" class="form-label">Id Balita</label>
-                <input type="number" class="form-control" v-model="knn.id_balita">
+                <label for="" class="form-label">NIK Balita</label>
+                <input type="number" class="form-control" v-model="knn.id_balita"
+                  placeholder="3578319xxxxxxxxx 16 digit">
                 <div v-if="validation.id_balita" class="text-danger">
                   {{ validation.id_balita[0] }}
                 </div>
 
-                <label for="" class="form-label">Umur Balita</label>
-                <input type="number" class="form-control" min="0" max="60" v-model="knn.u">
+                <label for="" class="form-label">Tanggal Lahir Balita</label>
+                <input type="date" class="form-control" min="0" max="60" v-model="knn.u">
                 <div v-if="validation.u" class="text-danger">
                   {{ validation.u[0] }}
                 </div>
 
                 <label for="" class="form-label">Berat Balita</label>
-                <input type="number" class="form-control" min="0" v-model="knn.bb">
+                <input type="number" class="form-control" min="0" v-model="knn.bb" placeholder="xx Kg">
                 <div v-if="validation.bb" class="text-danger">
                   {{ validation.bb[0] }}
                 </div>
 
                 <label for="" class="form-label">Tinggi Balita</label>
-                <input type="number" class="form-control" min="0" v-model="knn.tb">
+                <input type="number" class="form-control" min="0" v-model="knn.tb" placeholder="xx Cm">
                 <div v-if="validation.tb" class="text-danger">
                   {{ validation.tb[0] }}
                 </div>
