@@ -180,24 +180,32 @@
                             <!-- Kurus -->
                             <div v-if="knn.berat == 3">
                                 <p class=" card-text" style="text-align:center">
-
+                                    Berat badan anak tergolong dalam kurus
                                 </p>
                                 <ul>
-                                    <li></li>
+                                    <li>Penuhi Gizi seimbang anak</li>
+                                    <li>perhatikan pola makan.</li>
+                                    <li>konsumsi buah dan sayur.</li>
+                                    <li>tambah dengan camilan sehat</li>
                                 </ul>
                             </div>
+
                             <!-- sangat Kurus -->
                             <div v-if="knn.berat == 4">
                                 <p class=" card-text" style="text-align:center">
-
+                                    Balita Sangat Kurus
                                 </p>
                                 <ul>
-                                    <li></li>
+                                    <li>Penuhi Gizi seimbang anak</li>
+                                    <li>perhatikan pola makan.</li>
+                                    <li>konsumsi buah dan sayur.</li>
+                                    <li>tambah dengan camilan sehat</li>
                                 </ul>
                                 <router-link :to="{ name: 'knn.index' }"
                                     class="btn btn-warning btn-sm rounded shadow mb-3">
                                     Saran SUSU Penambah Berat Badan
                                 </router-link>
+                                <p>Segera Hubungi pihak kesehatan untuk mendapatkan penanganan lebih lanjut</p>
                             </div>
 
 
