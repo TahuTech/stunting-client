@@ -118,13 +118,13 @@
                             </tbody>
                         </table>
                         <div class="btn-group">
-                            <router-link :to="{ name: 'balita.index' }" class="btn btn-sm btn-info">
+                            <router-link :to="{ name: 'statistik.tinggi' }" class="btn btn-sm btn-info">
                                 Tubuh Tinggi</router-link>
-                            <router-link :to="{ name: 'balita.index' }" class="btn btn-sm btn-success">
+                            <router-link :to="{ name: 'statistik.tingno' }" class="btn btn-sm btn-success">
                                 Tinggi Normal</router-link>
-                            <router-link :to="{ name: 'balita.index' }" class="btn btn-sm btn-warning">
+                            <router-link :to="{ name: 'statistik.tingpen' }" class="btn btn-sm btn-warning">
                                 Tinggi Pendek</router-link>
-                            <router-link :to="{ name: 'balita.index' }" class="btn btn-sm btn-danger">
+                            <router-link :to="{ name: 'statistik.tingspen' }" class="btn btn-sm btn-danger">
                                 Tinggi S.Pendek</router-link>
                         </div>
                         <br><br>

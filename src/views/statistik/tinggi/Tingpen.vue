@@ -31,15 +31,12 @@
         </div>
     </nav>
 
-
     <div class="container my-5">
         <div class="row justify-content-center">
-            <router-link :to="{ name: 'statistik.index' }" class="btn btn-sm btn-info">
-                Kembali</router-link>
             <div class="col-flex">
 
                 <div class="card rounded shadow">
-                    <div class="card-header">Daftar Balita Gizi Baik</div>
+                    <div class="card-header">Daftar Balita Tinggi Lebih</div>
                     <div class="card-body">
                         <table class="table">
                             <thead>
@@ -51,7 +48,7 @@
                                     <th>BB(kg)</th>
                                     <th>TB(cm)</th>
                                     <th>Bulan</th>
-                                    <th>Gizi</th>
+                                    <th>Tinggi</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -78,11 +75,11 @@
                                     </td>
 
                                     <td>
-                                        <div v-if="knn.gizi == 1" style="color:red">Gizi Lebih</div>
-                                        <div v-if="knn.gizi == 2" style="color:#39FF14">Gizi Baik </div>
-                                        <div v-if="knn.gizi == 3" style="color:yellow">Gizi Kurang </div>
-                                        <div v-if="knn.gizi == 4" style="color:red">Gizi Buruk </div>
-                                        <div v-if="knn.gizi == null">---------</div>
+                                        <div v-if="knn.tinggi == 1" style="color:red">Tinggi Lebih</div>
+                                        <div v-if="knn.tinggi == 2" style="color:#39FF14">Tinggi Normal</div>
+                                        <div v-if="knn.tinggi == 3" style="color:yellow">Tinggi Pendek</div>
+                                        <div v-if="knn.tinggi == 4" style="color:red">Tinggi S.Pendek</div>
+                                        <div v-if="knn.tinggi == null">---------</div>
                                     </td>
 
                                 </tr>
@@ -121,7 +118,7 @@ export default {
 
         onMounted(() => {
             //ambil data dari api
-            axios.get('http://127.0.0.1:8000/api/gizba')
+            axios.get('http://127.0.0.1:8000/api/tingpen')
                 .then((result) => {
                     knns.value = result.data
                 }).catch((err) => {

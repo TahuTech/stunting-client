@@ -78,6 +78,31 @@ const routes = [
         component: () => import("../views/statistik/gizi/Gizle.vue")
     },
 
+    //statistik tinggi normal
+    {
+        path: '/statistik/tingno',
+        name: 'statistik.tingno',
+        component: () => import("../views/statistik/tinggi/Tingno.vue")
+    },
+    //statistik tinggi sangat Pendek
+    {
+        path: '/statistik/tingspen',
+        name: 'statistik.tingspen',
+        component: () => import("../views/statistik/tinggi/Tingspen.vue")
+    },
+    //statistik tinggi pendek
+    {
+        path: '/statistik/tingpen',
+        name: 'statistik.tingpen',
+        component: () => import("../views/statistik/tinggi/Gizkura.vue")
+    },
+    //statistik tinggi lebih
+    {
+        path: '/statistik/tinggi',
+        name: 'statistik.tinggi',
+        component: () => import("../views/statistik/tinggi/Tinggi.vue")
+    },
+    
     //user
     {
         path: '/user',
