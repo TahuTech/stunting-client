@@ -103,6 +103,34 @@ const routes = [
         component: () => import("../views/statistik/tinggi/Tinggi.vue")
     },
     
+
+    
+    //statistik berat normal
+    {
+        path: '/statistik/bernor',
+        name: 'statistik.bernor',
+        component: () => import("../views/statistik/berat/Bernor.vue")
+    },
+    //statistik berat sangat Kurus
+    {
+        path: '/statistik/berskur',
+        name: 'statistik.berskur',
+        component: () => import("../views/statistik/berat/berskur.vue")
+    },
+    //statistik berat kurus
+    {
+        path: '/statistik/berkur',
+        name: 'statistik.berkur',
+        component: () => import("../views/statistik/berat/Berkur.vue")
+    },
+    //statistik berat lebih
+    {
+        path: '/statistik/beratt',
+        name: 'statistik.beratt',
+        component: () => import("../views/statistik/berat/Beratt.vue")
+    },
+
+
     //user
     {
         path: '/user',
