@@ -33,6 +33,8 @@
 
     <div class="container my-5">
         <div class="row justify-content-center">
+            <router-link :to="{ name: 'statistik.index' }" class="btn btn-sm btn-info">
+                Kembali</router-link>
             <div class="col-flex">
 
                 <div class="card rounded shadow">
