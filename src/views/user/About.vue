@@ -43,7 +43,8 @@
                                 sangat
                                 pendek, pendek, normal, tinggi; serta berat (BB/TB) yaitu sangat kurus, kurus, normal,
                                 dan
-                                gemuk. </p><br>
+                                gemuk. hasil akhir dari klasifikasi diatas adalah berupa status stunting pada balita.
+                            </p><br>
                             <p style="text-align: center">
                                 website ini diajukan sebagai pemenuhan tugas akhir.</p>
                         </div>
