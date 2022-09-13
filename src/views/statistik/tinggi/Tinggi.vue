@@ -38,7 +38,7 @@
             <div class="col-flex">
 
                 <div class="card rounded shadow">
-                    <div class="card-header">Daftar Balita Tinggi Lebih</div>
+                    <div class="card-header">Daftar Balita Tinggi </div>
                     <div class="card-body">
                         <table class="table">
                             <thead>
